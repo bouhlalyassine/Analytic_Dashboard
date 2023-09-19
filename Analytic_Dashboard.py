@@ -44,7 +44,8 @@ with st.sidebar :
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    clickable_img = get_img_with_href(linkpic_code, 'https://docs.streamlit.io', 170, "blank")
+    clickable_img = get_img_with_href(linkpic_code, 'https://github.com/bouhlalyassine/Analytic_Dashboard',
+        170, "blank")
     st.markdown(clickable_img, unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
