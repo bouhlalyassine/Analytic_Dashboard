@@ -1,0 +1,17 @@
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    Test:
+      email: TTTTT@gmail.com
+      name: Test
+      password: $2b$12$sYfparATIfNZ2E9wZCmumOuiew3AtGenqrFpfF1.M2u4M5KxXTejy
+    invite:
+      email: XXXXX@gmail.com
+      name: invite
+      password: $2b$12$WGwz4GXr0nTHgaxoGE.eFehNaGlcP91euAyAVRoJsBd2Vf0suKcqK
+preauthorized:
+  emails:
+  - TTTTT@gmail.com
