@@ -4,21 +4,16 @@ a {
   text-decoration: none;
   color: white !important;
   font-weight: bold;
-  /* border: 1px solid  white; 
-  padding: 10px;
-  font-weight: 500;
-  font-family: 'Readex Pro';
-  font-size: small;*/
 }
 
 a:hover {
-  color: #9218cf !important;  /* #DC3876 */
+  color: #9218cf !important;
   text-decoration: none;
 }
 
 
 hr {/* Remove the extra space after the devider*/
-  margin-top: 5px;/* Can use % if needed*/
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
@@ -66,8 +61,8 @@ hr {/* Remove the extra space after the devider*/
 
 /* clickable img hover */
 .img-hover-effect:hover {
-  opacity: 0.8; /* Example: Reduce opacity when hovered */
-  transform: scale(1.15); /* Example: Slightly enlarge the image when hovered */
+  opacity: 0.8; 
+  transform: scale(1.15);
 }
 
 
@@ -76,6 +71,13 @@ button[data-testid="baseButton-headerNoPadding"]{
   background-color: #9218cf !important;
   padding: 10px 10px !important;
 }
+
+button[data-testid="baseButton-header"]{
+  background-color: #9218cf !important;
+  padding: 10px 10px !important;
+}
+
+
 
 /**/
 #MainMenu {visibility: hidden;}
