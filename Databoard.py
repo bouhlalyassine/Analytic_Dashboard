@@ -9,7 +9,7 @@ from streamlit_option_menu import option_menu
 import yaml
 from yaml.loader import SafeLoader
 
-# streamlit run Analytic_Dashboard.py
+# streamlit run Databoard.py
 
 st.set_page_config(page_title=TITLE,
     page_icon=PAGE_ICON,
@@ -34,7 +34,7 @@ st.markdown("<h2 style=\
     'text-align : center';\
     font-weight : bold ;\
     font-family : Arial;>\
-    Analytic Dashboard</h2>", unsafe_allow_html=True)
+    Databoard</h2>", unsafe_allow_html=True)
 
 st.markdown("""---""")
 
@@ -65,7 +65,7 @@ if nav_menu == 'Home':
 
     colpi1, colpi2 = st.columns([75, 25], gap="small")
     with colpi1:
-        st.info("Analytic Dashboard, is a simple example of a data analysis webapp that allows you to :\
+        st.info("Databoard, is a simple example of a data analysis webapp that allows you to :\
             \n ● Automate data processing\
             \n ● Choose the data to display using filters\
             \n ● Get interactive charts\
