@@ -44,7 +44,7 @@ with st.sidebar :
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    clickable_img = get_img_with_href(linkpic_code, 'https://github.com/bouhlalyassine/Analytic_Dashboard',
+    clickable_img = get_img_with_href(linkpic_code, 'https://github.com/bouhlalyassine/Databoard',
         170, "blank")
     st.markdown(clickable_img, unsafe_allow_html=True)
 
