@@ -12,7 +12,7 @@ from openpyxl.utils import get_column_letter
 import os
 import base64
 
-TITLE = "Analytic Dashbord"
+TITLE = "Databoard"
 PAGE_ICON ="ico_potfolio.ico"
 
 
@@ -29,8 +29,7 @@ css_file = current_dir / "main.css"
 pp_logo_portfolio = current_dir / "files" /  "logo_portfolio.png"
 linkpic_code = current_dir / "files" /  "code.png"
 
-# Tutos :
-# size :
+# Tuto :
 space = 15
 tuto_space = 70
 tuto_analyticdash_p = current_dir / "files" / "tuto_analyticdash.mp4"
@@ -152,7 +151,6 @@ def piechart_sales_city(df):
 def bar_chart_pay_type(df):
     
     df_grouped = df.groupby(by=['Payment_type']).sum()[['Prix_vente_Total']]
-    # df1 = df.pivot_table(index="Producteur", columns="Station", values="Brix", aggfunc="mean") 
     color_map = {
         'Cash': 'green',
         'Credit card': '#94362D',
@@ -160,7 +158,7 @@ def bar_chart_pay_type(df):
 
     bar_chart = px.bar(df_grouped, 
         x=df_grouped.index, 
-        y="Prix_vente_Total", # df_grouped.values si +ieurs
+        y="Prix_vente_Total",
         color=df_grouped.index,
         color_discrete_map=color_map, )
 
@@ -264,9 +262,7 @@ def curstom_excel_df(excel_file):
             cell.alignment = alignment_left
 
 
-    # modifier la largeur des colonnes :
-    # cf : https://stackoverflow.com/questions/47204711/openpyxl-change-width-of-n-columns
-    for index_col in range(1, max_c+1): # (inclu, exclu)
+    for index_col in range(1, max_c+1):
         i = get_column_letter(index_col)
         ws.column_dimensions[i].width = 13
 
